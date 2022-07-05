@@ -331,6 +331,96 @@ body {
   animation: none;
 }
 
+.contact-content {
+  width: 80%;
+  margin: 7rem auto auto auto;
+  padding: 1.5rem;
+}
+
+.logo-contact {
+  font-size: 5rem;
+  font-weight: 500;
+  margin: 1rem;
+  font-family: 'Libre Franklin', sans-serif;
+  text-align: center;
+}
+
+.logo-contact span {
+  color: darkmagenta;
+}
+
+.contact-wrapper {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, .3);
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.contact-wrapper > * {
+  padding: 2rem;
+}
+
+.contact-form {
+  background-color: #fff;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form div{
+  margin: 0;
+  padding: 1rem;
+}
+
+.contact-form form div label {
+  display: block;
+}
+
+.block {
+  grid-column: 1 / 3;
+}
+
+.contact-form form input,
+.contact-form form button,
+.contact-form form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background-color: none;
+  outline: 0;
+  color: black;
+  border-bottom: 0.1rem solid black;
+}
+
+.contact-form form button {
+  background-color: black;
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+  background-color: silver;
+  color: #000;
+  transition: background-color 1s ease-out;
+  outline: 0;
+}
+
+.contact-info {
+  background-color: black;
+}
+
+.contact-info ul,
+.contact-info ul li,
+.contact-info p {
+  text-align: left;
+  margin: 0 0 1rem 0;
+  color: #fff;
+}
+
 #footer{
   width: 100%;
   padding: 2rem 8%;

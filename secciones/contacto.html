@@ -5,139 +5,176 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web del evento Argentina Comic Con realizado 2 veces al año en el centro costa salguero 
+     Buenos Aires Capital Federal">
+    <meta name="keywords" content="Argentina, Comic Con, comics, mangas, animes, cosplay, formulario, contacto, formulario de contato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>Comic Con Argentina - Contacto</title>
 </head>
 
-<body id="body">
-    <header id="header">
+<body>
+    
+    <nav id="navbar">
 
-        <h1>ARGENTINA COMIC CON</h1>
+        <input type="checkbox" id="check">
 
-        <nav>
+        <label for="check" class="checkbtn">
 
-            <ul>
+            <i class="fas fa-bars"></i>
 
-                <li>
+        </label>
 
-                    <a href="../index.html">
-                        HOME
-                    </a>
+        <a href="index.html" class="enlace">
 
-                </li>
+            <img src="../imagenes/logo-preview.png" alt="Logo de la Argentina comic con" class="logo">
 
-                <li>
+        </a>
 
-                    <a href="expositores.html">
-                        EXPOSITORES
-                    </a>
+        <ul>
 
-                </li>
+            <li>
 
-                <li>
+                <a href="../index.html">
 
-                    <a href="programa.html">
-                        PROGRAMA
-                    </a>
+                    Home
 
-                </li>
+                </a>
 
-                <li>
+            </li>
 
-                    <a href="info.html">
-                        INFORMACIÓN
-                    </a>
+            <li>
 
-                </li>
+                <a href="expositores.html">
 
-                <li>
+                    Expositores
 
-                    <a href="contacto.html">
-                        CONTACTO
-                    </a>
+                </a>
 
-                </li>
+            </li>
 
-            </ul>
+            <li>
 
-        </nav>
+                <a href="programa.html">
 
-    </header>
+                    Programa
 
-    <main id="main-contact">
+                </a>
 
-        <h1>
+            </li>
 
-            ¡Contacta con nosotros!
+            <li>
 
-        </h1>
+                <a href="info.html">
 
-        <div class="contact-container">
+                    Información
 
-            <ul>
+                </a>
 
-                <li>
+            </li>
 
-                    Argentina Comic-con.
+            <li>
 
-                </li>
+                <a href="contacto.html">
 
-                <li>
+                    Contacto
 
-                    Centro Costa Salguero Av. Costanera Rafael Obligado 1221, C1425 CABA.
+                </a>
 
-                </li>
+            </li>
 
-                <li>
+        </ul>
 
-                    Viernes 20 de Mayo de 12 a 22 Hs.
+    </nav>
 
-                </li>
+    <div id="up"></div>
 
-                <li>
+    <main id="main">
 
-                    Sábado 21 de Mayo de 10 a 21 Hs.
+        <div class="contact-content">
 
-                </li>
-
-                <li>
-
-                    Domingo 22 de Mayo de 10 a 21 Hs.
-
-                </li>
-
-                <li>
-
-                    Teléfono: 011 4808-8300
-
-                </li>
-
-            </ul>
-
-            <form action="">
-
-                <label for="fname">Nombre:</label><br>
-
-                <input type="text" id="fname" name="fname" placeholder="John" /><br />
-
-                <label for="lname">Apellido:</label><br />
-
-                <input type="text" id="lname" name="lname" placeholder="Cena" /><br />
-
-                <label for="email">Email:</label><br />
-
-                <input type="email" name="email" id="email" placeholder="nombre@algo.com" /><br />
-
-                <label for="coment">Agregar un comentario:</label><br />
-
-                <textarea name="coment" id="coment" cols="50" rows="4" 
-                placeholder="Escribe aquí si tienes alguna duda.">
-                </textarea><br />
+            <h1 class="logo-contact">¡Contacta con <span>nosotros</span>!</h1>
+    
+            <div class="contact-wrapper animated bounceInUp">
                 
-                <input type="submit" value="Enviar">
+                <div class="contact-form">
+                    
+                    <form action="">
+                        
+                        <div>
+                        
+                            <label>Nombre Completo:</label>
+                        
+                            <input type="text" name="Nombre Completo">
+                        
+                        </div>
+                        
+                        <div>
+                        
+                            <label>Email:</label>
+                        
+                            <input type="email" name="Email">
+                        
+                        </div>
+                        
+                        <div>
+                        
+                            <label>Número de teléfono:</label>
+                        
+                            <input type="tel" name="Número de teléfono">
+                        
+                        </div>
+                        
+                        <div>
+                        
+                            <label>Asunto:</label>
+                        
+                            <input type="text" name="Asunto">
+                        
+                        </div>
+                        
+                        <div class="block">
+                        
+                            <label>Agregar un comentario:</label> 
+                        
+                            <textarea name="Agregar un comentario" rows="3"></textarea>
+                        
+                        </div>
+                        
+                        <div class="block">
+                        
+                            <button>
+                        
+                                Enviar
+                        
+                            </button>
+                        
+                        </div>
+                    
+                    </form>
+                
+                </div>
+                
+                <div class="contact-info">
+                    
+                    <ul>
+                    
+                        <li><i class="fas fa-map-marker-alt"></i> Centro Costa Salguero Av. Costanera Rafael Obligado 1221, C1425 CABA.</li>
+                    
+                        <li><i class="fas fa-phone"></i> (011) 4808-8300</li>
+                    
+                    </ul>
+                    
+                    <p>Viernes 20 de Mayo de 12 a 22 Hs.</p><br>
+                    <p>Sábado 21 de Mayo de 10 a 21 Hs.</p><br>
+                    <p>Domingo 22 de Mayo de 10 a 21 Hs.</p><br>
+                
+                </div>
             
-            </form>
-        
+            </div>
+    
         </div>
         
         <div class="contact-location">
@@ -153,123 +190,90 @@
     
     <footer id="footer">
 
-        <div id="up_button">
+        <div class="container-btn-go-up">
 
-            <a href="#header">
-
-                Volver arriba
-
-            </a>
+            <a href="#up" class="btn-go-up">Volver Arriba</a>
 
         </div>
 
-        <nav id="footer_navbar">
+        <img src="../imagenes/logo-preview.png" alt="Logo de la argentina comic con" class="footer-logo">
 
-            <ul>
+        <div class="social-icons-container">
 
-                <li>
+            <a href="https://www.facebook.com/Argentinacomiccon/" target="_blank" class="social-icon"></a>
 
-                    <a href="../index.html">
-                        HOME
-                    </a>
+            <a href="https://www.instagram.com/argcomiccon/" target="_blank" class="social-icon"></a>
 
-                </li>
+            <a href="https://twitter.com/ArgenComicCon" target="_blank" class="social-icon"></a>
 
-                <li>
-
-                    <a href="expositores.html">
-                        EXPOSITORES
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="programa.html">
-                        PROGRAMA
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="info.html">
-                        INFORMACIÓN
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="contacto.html">
-                        CONTACTO
-                    </a>
-
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <div id="social_media">
-
-            <ul>
-
-                <li>
-
-                    <a href="https://www.facebook.com/Argentinacomiccon/" target="_blank">
-
-                        <img src="../imagenes/facebook.png" alt="Logo de Facebook">
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="https://www.instagram.com/argcomiccon/" target="_blank">
-
-                        <img src="../imagenes/instagram.png" alt="Logo de Instragram">
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="https://twitter.com/ArgenComicCon" target="_blank">
-
-                        <img src="../imagenes/twitter.png" alt="Logo de Twitter">
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="https://www.youtube.com/channel/UCq43u4Pc0iYq14YmzzL0V6Q" target="_blank">
-
-                        <img src="../imagenes/youtube.png" alt="Logo de Youtube">
-
-                    </a>
-
-                </li>
-
-            </ul>
+            <a href="https://www.youtube.com/channel/UCq43u4Pc0iYq14YmzzL0V6Q" target="_blank" class="social-icon"></a>
 
         </div>
 
-        <div id="copy_right">
+        <ul class="footer-menu-container">
 
-            <p>
+            <li class="menu-item">
 
-                &copy; Todos los derechos reservados
+                <a href="../index.html">
 
-            </p>
+                    Home
 
-        </div>
+                </a>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="expositores.html">
+
+                    Expositores
+
+                </a>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="programa.html">
+
+                    Programa
+
+                </a>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="info.html">
+
+                    Información
+
+                </a>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="contacto.html">
+
+                    Contacto
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <span class="copyright">&copy;2022, Axel Langerman. All rights reserved.</span>
 
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
