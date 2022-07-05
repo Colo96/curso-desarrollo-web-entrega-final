@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "navbar"
+                       "hero" 
+                       "main"
+                       "footer";
+}
+
+#navbar {
+  background: black;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  grid-area: navbar;
+  z-index: 1;
+}
+
+#navbar ul {
+  float: right;
+  margin-right: 20px;
+}
+
+#navbar ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+#navbar ul li a {
+  color: white;
+  font-size: 1.8rem;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: bold;
+}
+
+#navbar ul li a:hover {
+  background: gold;
+  transition: .5s;
+  color: black;
+}
+
+.enlace {
+  position: absolute;
+  padding: 10px 50px;
+}
+
+.logo {
+  height: 60px;
+}
+
+.checkbtn {
+  font-size: 3rem;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+#hero {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
+    url(../imagenes/la-comic-con.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  grid-area: hero;
+}
+
+#hero .hero-text {
+  color: #fff;
+  text-align: center;
+}
+
+#hero .hero-text h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  margin: 1rem;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+#hero .hero-text p {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1rem;
+  margin: 1rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+#hero .hero-btn {
+  /*text-decoration: none;*/
+  color: #fff;
+  background: #000;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  display: inline-block;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+#hero .hero-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+#main {
+  grid-area: main;
+  width: 100%;
+  background-color: gold;
+}
+
+#main h2 {
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.index-post {
+  width: 90%;
+  transition: all 1.5s;
+  overflow: hidden;
+  margin: auto auto 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contener {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 350px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 0.3rem 0 #00000073;
+  transition: all 0.3s;
+}
+
+.contener:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 11px 14px rgb(0 0 0 / 25%), 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+.image-contener {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.image-contener img {
+  width: 100%;
+}
+
+.meta-contener {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 110px;
+  padding: 1rem 2rem;
+}
+
+.meta-contener .title {
+  padding: 0;
+  margin: 1rem 0 4.2rem 0;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+}
+
+.meta-contener .desc{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  height: 4rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.galeria {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  box-shadow: 0 0 0.3rem 0 #00000073;
+  transition: all 0.3s;
+}
+
+.galeria:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 11px 14px rgb(0 0 0 / 25%), 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+.contenedor-imagenes {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contenedor-imagenes .imagen{
+  position: relative;
+  margin-bottom: 0.5rem;
+  width: 15%;
+}
+
+.imagen img{
+  width: 100%;
+  height: 100%;
+}
+
+.container-news {
+  width: 90%;
+  background: #fff;
+  padding: 6rem;
+  margin: auto auto 1rem auto;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, .3);
+  transition: all 0.3s;
+}
+
+.container-news:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 11px 14px rgb(0 0 0 / 25%), 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+.container-news .title-news {
+  color: #000;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+}
+
+.container-news p {
+  color: #000;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem 0;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.container-news form {
+  width: 50%;
+  margin: auto;
+}
+
+.container-news form .inputBox {
+  width: 100%;
+  height: 7rem;
+  background-color: silver;
+  position: relative;
+}
+
+.container-news form .inputBox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 5rem);
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0 2rem;
+  font-size: 3rem;
+  color: #000;
+}
+
+.container-news form .inputBox .btn {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  outline: none;
+  background: gold;
+  color: #000;
+  cursor: pointer;
+  animation: animate 3s infinite;
+}
+
+@keyframes animate{
+  0%, 100%{
+    box-shadow: none;
+  }
+  50%{
+    box-shadow: 0 0 0 0.5rem goldenrod,
+                0 0 0 1rem darkorange;
+  }
+}
+
+.container-news form .inputBox .btn:hover {
+  animation: none;
+}
+
+#footer{
+  width: 100%;
+  padding: 2rem 8%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: footer;
+}
+
+.container-btn-go-up{
+  margin-bottom: 1rem;
+}
+
+.btn-go-up{
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: bold;
+  opacity: 0.6;
+  padding: 1rem;
+}
+
+.btn-go-up:hover{
+  opacity: 1;
+  background: gold;
+  transition: .5s;
+  color: black;
+}
+
+.footer-logo{
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.social-icons-container, .footer-menu-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.social-icon{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid white;
+  background-image: url(../imagenes/FacebookBlanco.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+
+.social-icon:hover{
+  background-color: black;
+  filter: invert(1);
+  animation: rotateIn;
+  animation-duration: 2s;
+}
+
+.social-icon:nth-of-type(2){
+  background-image: url(../imagenes/InstagramBlanco.png);
+}
+
+.social-icon:nth-of-type(3){
+  background-image: url(../imagenes/TwitterBlanco.png);
+}
+
+.social-icon:nth-of-type(4){
+  background-image: url(../imagenes/YoutubeBlango.png);
+}
+
+.footer-menu-container{
+  /*list-style-type: none;*/
+  color: white;
+  font-size: 1.8rem;
+}
+
+.menu-item{
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.menu-item:hover{
+  opacity: 1;
+}
+
+.menu-item a{
+  color: white;
+  font-size: 1.4rem;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: bold;
+}
+
+.menu-item a:hover{
+  background: gold;
+  transition: .5s;
+  color: black;
+}
+
+.copyright{
+  color: white;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+.copyright:hover{
+  opacity: 1;
+}
+
+/*FORMATO MOBILE*/
+@media (max-width: 767px) {
+
+  .checkbtn {
+    display: block;
+  }
+
+  #navbar ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: gold;
+    top: 80px;
+    left: -100vw;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  #navbar ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  #navbar ul li a{
+    font-size: 2rem;
+    color: black;
+  }
+
+  #navbar ul li a:hover{
+    background: black;
+    color: white;
+  }
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  #hero .hero-text h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero .hero-text p {
+    font-size: 1.5rem;
+  }
+
+  .contener {
+    width: 95%;
+    height: 500px;
+  }
+
+  .container-news form {
+    width: 100%;
+  }
+}
+
+/*FORMATO TABLET*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .enlace{
+    padding-left: 20px;
+  }
+
+  #navbar ul li a{
+    font-size: 1.3rem;
+  }
+
+  .contener {
+    width: 45%;
+  }
+
+  .container-news form {
+    width: 75%;
+  }
+
+}
