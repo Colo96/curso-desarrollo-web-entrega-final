@@ -375,6 +375,8 @@ body {
 
 .contact-form form div label {
   display: block;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.5rem;
 }
 
 .block {
@@ -419,6 +421,17 @@ body {
   text-align: left;
   margin: 0 0 1rem 0;
   color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.5rem;
+}
+
+.contact-location {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-location iframe {
+  width: 100%;
 }
 
 #footer{
@@ -597,6 +610,16 @@ body {
   .container-news form {
     width: 100%;
   }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info ul,
+  .contact-info ul li,
+  .contact-info p {
+    text-align: center;
+  }
 }
 
 /*FORMATO TABLET*/
@@ -616,6 +639,16 @@ body {
 
   .container-news form {
     width: 75%;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info ul,
+  .contact-info ul li,
+  .contact-info p {
+    text-align: center;
   }
 
 }
