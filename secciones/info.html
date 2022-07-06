@@ -5,74 +5,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio web del evento Argentina Comic Con realizado 2 veces al año en el centro costa salguero 
+    Buenos Aires Capital Federal">
+    <meta name="keywords" content="Argentina, Comic Con, comics, mangas, animes, cosplay, información">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <title>Comic Con Argentina - Info</title>
 </head>
 
-<body id="body">
+<body>
 
-    <header id="header">
+    <nav id="navbar">
 
-        <h1>ARGENTINA COMIC CON</h1>
+        <input type="checkbox" id="check">
 
-        <nav>
+        <label for="check" class="checkbtn">
 
-            <ul>
+            <i class="fas fa-bars"></i>
 
-                <li>
+        </label>
 
-                    <a href="../index.html">
-                        HOME
-                    </a>
+        <a href="index.html" class="enlace">
 
-                </li>
+            <img src="../imagenes/logo-preview.png" alt="Logo de la Argentina comic con" class="logo">
 
-                <li>
+        </a>
 
-                    <a href="expositores.html">
-                        EXPOSITORES
-                    </a>
+        <ul>
 
-                </li>
+            <li>
 
-                <li>
+                <a href="../index.html">
 
-                    <a href="programa.html">
-                        PROGRAMA
-                    </a>
+                    Home
 
-                </li>
+                </a>
 
-                <li>
+            </li>
 
-                    <a href="info.html">
-                        INFORMACIÓN
-                    </a>
+            <li>
 
-                </li>
+                <a href="expositores.html">
 
-                <li>
+                    Expositores
 
-                    <a href="contacto.html">
-                        CONTACTO
-                    </a>
+                </a>
 
-                </li>
+            </li>
 
-            </ul>
+            <li>
 
-        </nav>
+                <a href="programa.html">
 
-    </header>
+                    Programa
 
-    <main id="main-info">
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="info.html">
+
+                    Información
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="contacto.html">
+
+                    Contacto
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div id="up"></div>
+
+    <main id="main">
 
         <h1>
 
             Información y preguntas frecuentes
 
         </h1>
+
+        <div class="accordion">
+            <div>
+                <input type="radio" name="example_accordion" id="section1" class="accordion__input">
+                <label for="section1" class="accordion__label">Section #1</label>
+                <div class="accordion__content">
+                    <p>Section #1</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit reiciendis, ipsam quaerat,
+                        aperiam perspiciatis ad ullam architecto impedit natus illo nostrum molestias voluptas earum a
+                        voluptatibus fugiat fuga facere!
+                    </p>
+                </div>
+            </div>
+            <div>
+                <input type="radio" name="example_accordion" id="section2" class="accordion__input">
+                <label for="section2" class="accordion__label">Section #2</label>
+                <div class="accordion__content">
+                    <p>Section #2</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit reiciendis, ipsam quaerat,
+                        aperiam perspiciatis ad ullam architecto impedit natus illo nostrum molestias voluptas earum a
+                        voluptatibus fugiat fuga facere!
+                    </p>
+                </div>
+            </div>
+            <div>
+                <input type="radio" name="example_accordion" id="section3" class="accordion__input">
+                <label for="section3" class="accordion__label">Section #3</label>
+                <div class="accordion__content">
+                    <p>Section #3</p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit reiciendis, ipsam quaerat,
+                        aperiam perspiciatis ad ullam architecto impedit natus illo nostrum molestias voluptas earum a
+                        voluptatibus fugiat fuga facere!
+                    </p>
+                </div>
+            </div>
+        </div>
 
         <details class="info-details" data-aos="zoom-in">
 
@@ -84,7 +148,8 @@
 
             <p>
 
-                <strong>Comic Con</strong> (Comic Convention) es la definición de un género de convención o tipo de evento
+                <strong>Comic Con</strong> (Comic Convention) es la definición de un género de convención o tipo de
+                evento
                 dedicado a la
                 cultura pop, el cual actualmente se viene celebrando en diferentes partes del mundo. Es originario de
                 Estados Unidos en donde se realiza hace más de 50 años, y cuenta con la participación y presencia de
@@ -109,7 +174,8 @@
 
             <p>
 
-                <strong>Comic Con</strong> es una sociedad dedicada a la producción y organización de las dos ediciones anuales de
+                <strong>Comic Con</strong> es una sociedad dedicada a la producción y organización de las dos ediciones
+                anuales de
                 la
                 franquicia en Argentina. Formada por un grupo experimentado de personas que con un amplio conocimiento
                 en
@@ -149,7 +215,8 @@
 
             <p>
 
-                Se realiza en el <strong>Costa Salguero</strong>, ubicado en el barrio de Palermo (Capital Federal), en la
+                Se realiza en el <strong>Costa Salguero</strong>, ubicado en el barrio de Palermo (Capital Federal), en
+                la
                 intersección
                 de la Avenida Costanera Norte Rafael Obligado y la calle Jerónimo Salguero. Por el este lo limita el Río
                 de
@@ -176,7 +243,8 @@
                 a
                 disponibilidad).
 
-                <strong>IMPORTANTE: Tickets adquiridos por otros medios no oficiales no serán reconocidos como válidos.</strong>
+                <strong>IMPORTANTE: Tickets adquiridos por otros medios no oficiales no serán reconocidos como
+                    válidos.</strong>
 
             </p>
 
@@ -240,7 +308,8 @@
 
             <p>
 
-                <strong>Comic Con</strong> cuenta con estacionamiento para más de 3.000 vehículos. Los estacionamiento pertenecen
+                <strong>Comic Con</strong> cuenta con estacionamiento para más de 3.000 vehículos. Los estacionamiento
+                pertenecen
                 a
                 Centro
                 Costa Salguero, los mismos tienen un costo de estadía que es cobrado por el complejo.
@@ -317,7 +386,8 @@
 
             <p>
 
-                Quienes adquieran los tickets <strong>Platinum</strong> o <strong>Premium</strong> recibirán de regalo una segunda cuponera
+                Quienes adquieran los tickets <strong>Platinum</strong> o <strong>Premium</strong> recibirán de regalo
+                una segunda cuponera
                 con más
                 descuentos
                 y promociones.
@@ -336,7 +406,8 @@
 
             <p>
 
-                Quienes adquieran los tickets <strong>Premium</strong> podrán optar por participar de un meet & greet (firma o
+                Quienes adquieran los tickets <strong>Premium</strong> podrán optar por participar de un meet & greet
+                (firma o
                 foto con
                 una
                 celebridad) a elección. Solo deben presentarse con su ticket Premium pass en el sector de Meet & Greets
@@ -403,7 +474,8 @@
 
             <p>
 
-                El predio <strong>Centro Costa Salguero</strong> y <strong>Argentina Comic</strong> Con cumplen en todos los casos los
+                El predio <strong>Centro Costa Salguero</strong> y <strong>Argentina Comic</strong> Con cumplen en todos
+                los casos los
                 requerimientos
                 dispuestos por los protocolos sanitarios vigentes dispuestos por el Ministerio de Salud de la Ciudad
                 Autónoma de Buenos Aires.
@@ -423,121 +495,81 @@
 
     <footer id="footer">
 
-        <div id="up_button">
+        <div class="container-btn-go-up">
 
-            <a href="#header">
-
-                Volver arriba
-
-            </a>
+            <a href="#up" class="btn-go-up">Volver Arriba</a>
 
         </div>
 
-        <nav id="footer_navbar">
+        <img src="../imagenes/logo-preview.png" alt="Logo de la argentina comic con" class="footer-logo">
 
-            <ul>
+        <div class="social-icons-container">
 
-                <li>
+            <a href="https://www.facebook.com/Argentinacomiccon/" target="_blank" class="social-icon"></a>
 
-                    <a href="../index.html">
-                        HOME
-                    </a>
+            <a href="https://www.instagram.com/argcomiccon/" target="_blank" class="social-icon"></a>
 
-                </li>
+            <a href="https://twitter.com/ArgenComicCon" target="_blank" class="social-icon"></a>
 
-                <li>
-
-                    <a href="expositores.html">
-                        EXPOSITORES
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="programa.html">
-                        PROGRAMA
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="info.html">
-                        INFORMACIÓN
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="contacto.html">
-                        CONTACTO
-                    </a>
-
-                </li>
-
-            </ul>
-
-        </nav>
-
-        <div id="social_media">
-
-            <ul>
-
-                <li>
-
-                    <a href="https://www.facebook.com/Argentinacomiccon/" target="_blank">
-
-                        <img src="../imagenes/facebook.png" alt="Logo de Facebook">
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="https://www.instagram.com/argcomiccon/" target="_blank">
-
-                        <img src="../imagenes/instagram.png" alt="Logo de Instragram">
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="https://twitter.com/ArgenComicCon" target="_blank">
-
-                        <img src="../imagenes/twitter.png" alt="Logo de Twitter">
-
-                    </a>
-
-                </li>
-
-                <li>
-
-                    <a href="https://www.youtube.com/channel/UCq43u4Pc0iYq14YmzzL0V6Q" target="_blank">
-
-                        <img src="../imagenes/youtube.png" alt="Logo de Youtube">
-
-                    </a>
-
-                </li>
-
-            </ul>
+            <a href="https://www.youtube.com/channel/UCq43u4Pc0iYq14YmzzL0V6Q" target="_blank" class="social-icon"></a>
 
         </div>
 
-        <div id="copy_right">
+        <ul class="footer-menu-container">
 
-            <p>
+            <li class="menu-item">
 
-                &copy; Todos los derechos reservados
+                <a href="../index.html">
 
-            </p>
+                    Home
 
-        </div>
+                </a>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="expositores.html">
+
+                    Expositores
+
+                </a>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="programa.html">
+
+                    Programa
+
+                </a>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="info.html">
+
+                    Información
+
+                </a>
+
+            </li>
+
+            <li class="menu-item">
+
+                <a href="contacto.html">
+
+                    Contacto
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <span class="copyright">&copy;2022, Axel Langerman. All rights reserved.</span>
 
     </footer>
 
