@@ -138,6 +138,16 @@ body {
   background-color: gold;
 }
 
+#main h1 {
+  margin-top: 10rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
 #main h2 {
   text-align: center;
   padding: 1rem;
@@ -505,6 +515,82 @@ body {
   transform: translateY(-50%) rotate(0.5turn);
 }
 
+.stands {
+  width: 90%;
+  margin: auto;
+}
+
+.stands figure img {
+  width: 100%;
+}
+
+.index-post-expo {
+  width: 90%;
+  transition: all 1.5s;
+  overflow: hidden;
+  margin: auto auto 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contener-expo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 30%;
+  height: 500px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 0.3rem 0 #00000073;
+  transition: all 0.3s;
+}
+
+.contener-expo:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 11px 14px rgb(0 0 0 / 25%), 0 8px 20px rgb(0 0 0 / 10%);
+}
+
+.image-contener-expo {
+  width: 100%;
+  height: 312px;
+  overflow: hidden;
+}
+
+.image-contener-expo img {
+  width: 100%;
+  height: 100%;
+}
+
+.meta-contener-expo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 110px;
+  padding: 1rem 2rem;
+}
+
+.meta-contener-expo .title-expo {
+  padding: 0;
+  margin: 1rem 0 1rem 0;
+  font-size: 2rem !important;
+  color: #000;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+}
+
+.meta-contener-expo .desc-expo{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  height: 4rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
 #footer{
   width: 100%;
   padding: 2rem 8%;
@@ -691,6 +777,11 @@ body {
   .contact-info p {
     text-align: center;
   }
+
+  .contener-expo {
+    width: 95%;
+    height: 500px;
+  }
 }
 
 /*FORMATO TABLET*/
@@ -720,6 +811,10 @@ body {
   .contact-info ul li,
   .contact-info p {
     text-align: center;
+  }
+
+  .contener-expo {
+    width: 45%;
   }
 
 }
