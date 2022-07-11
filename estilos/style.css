@@ -343,7 +343,7 @@ body {
 
 .contact-content {
   width: 80%;
-  margin: 7rem auto auto auto;
+  margin: 1rem auto auto auto;
   padding: 1.5rem;
 }
 
@@ -515,15 +515,6 @@ body {
   transform: translateY(-50%) rotate(0.5turn);
 }
 
-.stands {
-  width: 90%;
-  margin: auto;
-}
-
-.stands figure img {
-  width: 100%;
-}
-
 .index-post-expo {
   width: 90%;
   transition: all 1.5s;
@@ -589,6 +580,85 @@ body {
   text-align: center;
   height: 4rem;
   font-family: 'Titillium Web', sans-serif;
+}
+
+.stands {
+  width: 90%;
+  margin: auto;
+  background-color: #fff;
+  box-shadow: 0 0 0.3rem 0 #00000073;
+}
+
+.stands h2 {
+  padding: 0;
+  margin: 1rem 0 1rem 0;
+  font-size: 2rem !important;
+  color: #000;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+}
+
+.stands figure {
+  width: 100%;
+}
+
+.stands figure img {
+  width: 100%;
+}
+
+.container-card-stands {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card-stands {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2rem;
+}
+
+.artistas {
+  width: 90%;
+  margin: 1rem auto 1rem auto;
+  background-color: #fff;
+  box-shadow: 0 0 0.3rem 0 #00000073;
+}
+
+.artistas h2 {
+  padding: 0;
+  margin: 1rem 0 1rem 0;
+  font-size: 2rem !important;
+  color: #000;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
+}
+
+.container-card-artistas {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.card-artistas {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2rem;
+}
+
+.title-list {
+  padding: 0;
+  margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 700;
 }
 
 #footer{
@@ -782,6 +852,12 @@ body {
     width: 95%;
     height: 500px;
   }
+
+  .container-card-stands {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*FORMATO TABLET*/
@@ -816,5 +892,4 @@ body {
   .contener-expo {
     width: 45%;
   }
-
 }
