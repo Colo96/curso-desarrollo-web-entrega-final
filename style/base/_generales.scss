@@ -12,13 +12,3 @@
 html {
   font-size: 62.5%;
 }
-
-body {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "navbar"
-                       "hero" 
-                       "main"
-                       "footer";
-}

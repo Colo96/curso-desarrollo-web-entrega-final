@@ -5,6 +5,16 @@
 @import "./layout/footer";
 @import "./components/mediaquery";
 
+body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "navbar"
+                       "hero" 
+                       "main"
+                       "footer";
+}
+
 #main {
   grid-area: main;
   width: 100%;
