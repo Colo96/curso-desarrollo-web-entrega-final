@@ -116,6 +116,227 @@ body {
   color: #000;
 }
 
+#footer {
+  width: 100%;
+  padding: 2rem 8%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  grid-area: footer;
+}
+
+.container-btn-go-up {
+  margin-bottom: 1rem;
+}
+
+.btn-go-up {
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  opacity: 0.6;
+  padding: 1rem;
+}
+.btn-go-up:hover {
+  opacity: 1;
+  background: gold;
+  transition: 0.5s;
+  color: black;
+}
+
+.footer-logo {
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.social-icons-container, .footer-menu-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 1px solid white;
+  background-image: url(../imagenes/FacebookBlanco.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  margin: 1rem;
+}
+.social-icon:hover {
+  background-color: black;
+  filter: invert(1);
+  -webkit-animation: rotateIn;
+          animation: rotateIn;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+.social-icon:nth-of-type(2) {
+  background-image: url(../imagenes/InstagramBlanco.png);
+}
+.social-icon:nth-of-type(3) {
+  background-image: url(../imagenes/TwitterBlanco.png);
+}
+.social-icon:nth-of-type(4) {
+  background-image: url(../imagenes/YoutubeBlango.png);
+}
+
+.footer-menu-container {
+  /*list-style-type: none;*/
+  color: white;
+  font-size: 1.8rem;
+}
+
+.menu-item {
+  margin: 1rem 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+}
+.menu-item:hover {
+  opacity: 1;
+}
+.menu-item a {
+  color: white;
+  font-size: 1.4rem;
+  padding: 7px 13px;
+  text-transform: uppercase;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+}
+.menu-item a:hover {
+  background: gold;
+  transition: 0.5s;
+  color: black;
+}
+
+.copyright {
+  color: white;
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  opacity: 0.6;
+}
+.copyright:hover {
+  opacity: 1;
+}
+
+/*FORMATO MOBILE*/
+@media (max-width: 767px) {
+  .checkbtn {
+    display: block;
+  }
+  #navbar ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: gold;
+    top: 80px;
+    left: -100vw;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  #navbar ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  #navbar ul li a {
+    font-size: 2rem;
+    color: black;
+  }
+  #navbar ul li a:hover {
+    background: black;
+    color: white;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  #hero .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  #hero .hero-text p {
+    font-size: 1.5rem;
+  }
+  .contener {
+    width: 95%;
+    height: 500px;
+  }
+  .container-news form {
+    width: 100%;
+  }
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contact-info ul,
+.contact-info ul li,
+.contact-info p {
+    text-align: center;
+  }
+  .contener-expo {
+    width: 95%;
+    height: 500px;
+  }
+  .container-card-stands {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-video {
+    justify-content: center;
+  }
+  .card-video {
+    width: 90%;
+  }
+  .container-cronograma {
+    justify-content: center;
+  }
+  .cronograma {
+    width: 90%;
+  }
+}
+/*FORMATO TABLET*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  #navbar ul li a {
+    font-size: 1.3rem;
+  }
+  .contener {
+    width: 45%;
+  }
+  .container-news form {
+    width: 75%;
+  }
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .contact-info ul,
+.contact-info ul li,
+.contact-info p {
+    text-align: center;
+  }
+  .contener-expo {
+    width: 45%;
+  }
+  .card-video {
+    width: 45%;
+  }
+  .cronograma {
+    width: 45%;
+  }
+}
 #main {
   grid-area: main;
   width: 100%;
@@ -682,226 +903,4 @@ body {
   font-weight: 700;
   margin: 1rem 0 1rem 0;
   font-size: 1.2rem;
-}
-
-#footer {
-  width: 100%;
-  padding: 2rem 8%;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  grid-area: footer;
-}
-
-.container-btn-go-up {
-  margin-bottom: 1rem;
-}
-
-.btn-go-up {
-  display: block;
-  width: 100%;
-  color: white;
-  text-align: center;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: bold;
-  opacity: 0.6;
-  padding: 1rem;
-}
-.btn-go-up:hover {
-  opacity: 1;
-  background: gold;
-  transition: 0.5s;
-  color: black;
-}
-
-.footer-logo {
-  height: 80px;
-  margin-bottom: 1rem;
-}
-
-.social-icons-container, .footer-menu-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
-}
-
-.social-icon {
-  height: 50px;
-  width: 50px;
-  border-radius: 50px;
-  border: 1px solid white;
-  background-image: url(../imagenes/FacebookBlanco.png);
-  background-position: center;
-  background-size: 40%;
-  background-repeat: no-repeat;
-  margin: 1rem;
-}
-.social-icon:hover {
-  background-color: black;
-  filter: invert(1);
-  -webkit-animation: rotateIn;
-          animation: rotateIn;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-}
-.social-icon:nth-of-type(2) {
-  background-image: url(../imagenes/InstagramBlanco.png);
-}
-.social-icon:nth-of-type(3) {
-  background-image: url(../imagenes/TwitterBlanco.png);
-}
-.social-icon:nth-of-type(4) {
-  background-image: url(../imagenes/YoutubeBlango.png);
-}
-
-.footer-menu-container {
-  /*list-style-type: none;*/
-  color: white;
-  font-size: 1.8rem;
-}
-
-.menu-item {
-  margin: 1rem 1.5rem;
-  cursor: pointer;
-  opacity: 0.6;
-}
-.menu-item:hover {
-  opacity: 1;
-}
-.menu-item a {
-  color: white;
-  font-size: 1.4rem;
-  padding: 7px 13px;
-  text-transform: uppercase;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: bold;
-}
-.menu-item a:hover {
-  background: gold;
-  transition: 0.5s;
-  color: black;
-}
-
-.copyright {
-  color: white;
-  text-align: center;
-  font-family: "Libre Franklin", sans-serif;
-  font-weight: bold;
-  opacity: 0.6;
-}
-.copyright:hover {
-  opacity: 1;
-}
-
-/*FORMATO MOBILE*/
-@media (max-width: 767px) {
-  .checkbtn {
-    display: block;
-  }
-  #navbar ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: gold;
-    top: 80px;
-    left: -100vw;
-    text-align: center;
-    transition: all 0.5s;
-  }
-  #navbar ul li {
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  #navbar ul li a {
-    font-size: 2rem;
-    color: black;
-  }
-  #navbar ul li a:hover {
-    background: black;
-    color: white;
-  }
-  #check:checked ~ ul {
-    left: 0;
-  }
-  #hero .hero-text h1 {
-    font-size: 2.5rem;
-  }
-  #hero .hero-text p {
-    font-size: 1.5rem;
-  }
-  .contener {
-    width: 95%;
-    height: 500px;
-  }
-  .container-news form {
-    width: 100%;
-  }
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .contact-info ul,
-.contact-info ul li,
-.contact-info p {
-    text-align: center;
-  }
-  .contener-expo {
-    width: 95%;
-    height: 500px;
-  }
-  .container-card-stands {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .container-video {
-    justify-content: center;
-  }
-  .card-video {
-    width: 90%;
-  }
-  .container-cronograma {
-    justify-content: center;
-  }
-  .cronograma {
-    width: 90%;
-  }
-}
-/*FORMATO TABLET*/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .enlace {
-    padding-left: 20px;
-  }
-  #navbar ul li a {
-    font-size: 1.3rem;
-  }
-  .contener {
-    width: 45%;
-  }
-  .container-news form {
-    width: 75%;
-  }
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .contact-info ul,
-.contact-info ul li,
-.contact-info p {
-    text-align: center;
-  }
-  .contener-expo {
-    width: 45%;
-  }
-  .card-video {
-    width: 45%;
-  }
-  .cronograma {
-    width: 45%;
-  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,112 @@
+#footer{
+    width: 100%;
+    padding: 2rem 8%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: footer;
+  }
+  
+  .container-btn-go-up{
+    margin-bottom: 1rem;
+  }
+  
+  .btn-go-up{
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+    opacity: 0.6;
+    padding: 1rem;
+    &:hover{
+      opacity: 1;
+      background: gold;
+      transition: .5s;
+      color: black;
+    }
+  }
+  
+  .footer-logo{
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  
+  .social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-image: url(../imagenes/FacebookBlanco.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1rem;
+    &:hover{
+      background-color: black;
+      filter: invert(1);
+      animation: rotateIn;
+      animation-duration: 2s;
+    }
+    &:nth-of-type(2){
+      background-image: url(../imagenes/InstagramBlanco.png);
+    }
+    &:nth-of-type(3){
+      background-image: url(../imagenes/TwitterBlanco.png);
+    }
+    &:nth-of-type(4){
+      background-image: url(../imagenes/YoutubeBlango.png);
+    }
+  }
+  
+  .footer-menu-container{
+    /*list-style-type: none;*/
+    color: white;
+    font-size: 1.8rem;
+  }
+  
+  .menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    &:hover{
+      opacity: 1;
+    }
+    a{
+      color: white;
+      font-size: 1.4rem;
+      padding: 7px 13px;
+      text-transform: uppercase;
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: bold;
+      &:hover{
+        background: gold;
+        transition: .5s;
+        color: black;
+      }
+    }
+  }
+  
+  .copyright{
+    color: white;
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: bold;
+    opacity: 0.6;
+    &:hover{
+      opacity: 1;
+    }
+  }
