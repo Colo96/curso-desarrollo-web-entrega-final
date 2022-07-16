@@ -5,7 +5,7 @@
 @import "./layout/footer";
 
 body {
-  width: 100%;
+  @include width-size(100%);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "navbar"
@@ -16,19 +16,19 @@ body {
 
 #main {
   grid-area: main;
-  width: 100%;
+  @include width-size(100%);
   background-color: $color_1;
   h1{
     margin-top: 10rem;
     margin-bottom: 2.5rem;
-    text-align: center;
+    text-align: map-get($estilos_h123, text-align);
     padding: 1rem;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 5rem;
     font-weight: 800;
   }
   h2{
-    text-align: center;
+    text-align: map-get($estilos_h123, text-align);
     padding: 1rem;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 3rem;
@@ -37,7 +37,7 @@ body {
 }
 
 .index-post {
-  width: 90%;
+  @include width-size(90%);
   transition: all 1.5s;
   overflow: hidden;
   margin: auto auto 1rem auto;
@@ -53,7 +53,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 30%;
+  @include width-size(30%);
   height: 350px;
   overflow: hidden;
   background-color: $color_3;
@@ -66,11 +66,11 @@ body {
 }
 
 .image-contener {
-  width: 100%;
+  @include width-size(100%);
   height: auto;
   overflow: hidden;
   img{
-    width: 100%;
+    @include width-size(100%);
   }
 }
 
@@ -81,17 +81,17 @@ body {
   height: 110px;
   padding: 1rem 2rem;
   .title{
-    padding: 0;
+    padding: map-get($estilos_h123, padding);
     margin: 1rem 0 4.2rem 0;
     font-size: 1.5rem;
     color: $color_2;
     font-family: 'Libre Franklin', sans-serif;
-    font-weight: 700;
+    font-weight: map-get($estilos_h123, font-weight);
   }
   .desc{
     display: flex;
     align-items: center;
-    width: 80%;
+    @include width-size(80%);
     text-align: center;
     height: 4rem;
     font-family: 'Titillium Web', sans-serif;
@@ -99,7 +99,7 @@ body {
 }
 
 .galeria {
-  width: 90%;
+  @include width-size(90%);
   margin: auto;
   margin-bottom: 1rem;
   background-color: $color_3;
@@ -114,23 +114,23 @@ body {
 
 .contenedor-imagenes {
   display: flex;
-  width: 100%;
+  @include width-size(100%);
   margin: auto;
   justify-content: space-around;
   flex-wrap: wrap;
   .imagen{
     position: relative;
     margin-bottom: 0.5rem;
-    width: 15%;
+    @include width-size(15%);
     img{
-        width: 100%;
+        @include width-size(100%);
         height: 100%;
     }
   }
 }
 
 .container-news {
-  width: 90%;
+  @include width-size(90%);
   background: $color_3;
   padding: 6rem;
   margin: auto auto 1rem auto;
@@ -142,10 +142,10 @@ body {
   }
   .title-news{
     color: $color_2;
-    text-align: center;
+    text-align: map-get($estilos_h123, text-align);
     font-size: 3rem;
     font-family: 'Libre Franklin', sans-serif;
-    font-weight: 700;
+    font-weight: map-get($estilos_h123, font-weight);
   }
   p{
     color: $color_2;
@@ -155,10 +155,10 @@ body {
     font-family: 'Titillium Web', sans-serif;
   }
   form{
-    width: 50%;
+    @include width-size(50%);
     margin: auto;
     .inputBox{
-        width: 100%;
+        @include width-size(100%);
         height: 7rem;
         background-color: $color_4;
         position: relative;
@@ -208,7 +208,7 @@ body {
 }
 
 .contact-content {
-  width: 80%;
+  @include width-size(80%);
   margin: 1rem auto auto auto;
   padding: 1.5rem;
 }
@@ -258,7 +258,7 @@ body {
 .contact-form form input,
 .contact-form form button,
 .contact-form form textarea {
-  width: 100%;
+  @include width-size(100%);
   padding: 1rem;
   border: none;
   background-color: none;
@@ -298,16 +298,16 @@ body {
 }
 
 .contact-location {
-  width: 80%;
+  @include width-size(80%);
   margin: auto;
   iframe{
-    width: 100%;
+    @include width-size(100%);
   }
 }
 
 .info__header {
   text-align: center;
-  width: 80%;
+  @include width-size(80%);
   margin: 10rem auto auto auto;
   font-family: 'Libre Franklin', sans-serif;
   font-size: 3rem;
@@ -315,7 +315,7 @@ body {
 }
 
 .accordion {
-  width: 80%;
+  @include width-size(80%);
   margin: 2.5rem auto 5rem auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   overflow: hidden;
@@ -373,7 +373,7 @@ body {
 }
 
 .index-post-expo {
-  width: 90%;
+  @include width-size(90%);
   transition: all 1.5s;
   overflow: hidden;
   margin: auto auto 1rem auto;
@@ -389,7 +389,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 30%;
+  @include width-size(30%);
   height: 500px;
   overflow: hidden;
   background-color: $color_3;
@@ -402,11 +402,11 @@ body {
 }
 
 .image-contener-expo {
-  width: 100%;
+  @include width-size(100%);
   height: 312px;
   overflow: hidden;
   img{
-    width: 100%;
+    @include width-size(100%);
     height: 100%;
   }
 }
@@ -418,17 +418,17 @@ body {
   height: 110px;
   padding: 1rem 2rem;
   .title-expo{
-    padding: 0;
-    margin: 1rem 0 1rem 0;
+    padding: map-get($estilos_h123, padding);
+    margin: map-get($estilos_h123, margin);
     font-size: 2rem !important;
     color: $color_2;
     font-family: 'Libre Franklin', sans-serif;
-    font-weight: 700;
+    font-weight: map-get($estilos_h123, font-weight);
   }
   .desc-expo{
     display: flex;
     align-items: center;
-    width: 80%;
+    @include width-size(80%);
     text-align: center;
     height: 4rem;
     font-family: 'Titillium Web', sans-serif;
@@ -436,28 +436,28 @@ body {
 }
 
 .stands {
-  width: 90%;
+  @include width-size(90%);
   margin: auto;
   background-color: $color_3;
   box-shadow: 0 0 0.3rem 0 #00000073;
   h2{
-    padding: 0;
-    margin: 1rem 0 1rem 0;
+    padding: map-get($estilos_h123, padding);
+    margin: map-get($estilos_h123, margin);
     font-size: 2rem !important;
     color: $color_2;
     font-family: 'Libre Franklin', sans-serif;
-    font-weight: 700;
+    font-weight: map-get($estilos_h123, font-weight);
   }
   figure{
-    width: 100%;
+    @include width-size(100%);
     img{
-        width: 100%;
+      @include width-size(100%);
     }
   }
 }
 
 .container-card-stands {
-  width: 100%;
+  @include width-size(100%);
   padding: 2rem;
   display: flex;
   justify-content: space-between;
@@ -472,22 +472,22 @@ body {
 }
 
 .artistas {
-  width: 90%;
+  @include width-size(90%);
   margin: 1rem auto 1rem auto;
   background-color: $color_3;
   box-shadow: 0 0 0.3rem 0 #00000073;
   h2{
-    padding: 0;
-    margin: 1rem 0 1rem 0;
+    padding: map-get($estilos_h123, padding);
+    margin: map-get($estilos_h123, margin);
     font-size: 2rem !important;
     color: $color_2;
     font-family: 'Libre Franklin', sans-serif;
-    font-weight: 700;
+    font-weight: map-get($estilos_h123, font-weight);
   }
 }
 
 .container-card-artistas {
-  width: 100%;
+  @include width-size(100%);
   padding: 2rem;
   display: flex;
   justify-content: space-around;
@@ -502,16 +502,16 @@ body {
 }
 
 .title-list {
-  padding: 0;
-  margin: 1rem 0 1rem 0;
+  padding: map-get($estilos_h123, padding);
+  margin: map-get($estilos_h123, margin);
   font-size: 1.5rem;
   color: $color_2;
   font-family: 'Libre Franklin', sans-serif;
-  font-weight: 700;
+  font-weight: map-get($estilos_h123, font-weight);
 }
 
 .container-video {
-  width: 90%;
+  @include width-size(90%);
   margin: auto;
   background-color: $color_3;
   padding: 1rem;
@@ -524,17 +524,17 @@ body {
 }
 
 .card-video {
-  width: 30%;
+  @include width-size(30%);
   h2{
     font-size: 1.5rem !important;
   }
   iframe{
-    width: 100%;
+    @include width-size(100%);
   }
 }
 
 .container-cronograma {
-  width: 90%;
+  @include width-size(90%);
   margin: 1rem auto 1rem auto;
   background-color: $color_3;
   padding: 1rem;
@@ -547,15 +547,15 @@ body {
 }
 
 .cronograma {
-  width: 30%;
+  @include width-size(30%);
   padding: 1rem;
   h3{
-    padding: 0;
-    margin: 1rem 0 1rem 0;
+    padding: map-get($estilos_h123, padding);
+    margin: map-get($estilos_h123, margin);
     font-size: 1.5rem;
     color: $color_2;
     font-family: 'Libre Franklin', sans-serif;
-    font-weight: 700;
+    font-weight: map-get($estilos_h123, font-weight);
   }
 }
 
@@ -568,8 +568,8 @@ body {
 
 .title-cronograma {
   font-family: 'Libre Franklin', sans-serif;
-  font-weight: 700;
-  margin: 1rem 0 1rem 0;
+  font-weight: map-get($estilos_h123, font-weight);
+  margin: map-get($estilos_h123, margin);
   font-size: 1.2rem;
 }
 
@@ -582,7 +582,7 @@ body {
 
   #navbar ul {
     position: fixed;
-    width: 100%;
+    @include width-size(100%);
     height: 100vh;
     background: $color_1;
     top: 80px;
@@ -620,12 +620,12 @@ body {
   }
 
   .contener {
-    width: 95%;
+    @include width-size(95%);
     height: 500px;
   }
 
   .container-news form {
-    width: 100%;
+    @include width-size(100%);
   }
 
   .contact-wrapper {
@@ -639,7 +639,7 @@ body {
   }
 
   .contener-expo {
-    width: 95%;
+    @include width-size(95%);
     height: 500px;
   }
 
@@ -654,7 +654,7 @@ body {
   }
 
   .card-video {
-    width: 90%;
+    @include width-size(90%);
   }
 
   .container-cronograma {
@@ -662,7 +662,7 @@ body {
   }
 
   .cronograma {
-    width: 90%;
+    @include width-size(90%);
   }
 }
 
@@ -678,11 +678,11 @@ body {
   }
 
   .contener {
-    width: 45%;
+    @include width-size(45%);
   }
 
   .container-news form {
-    width: 75%;
+    @include width-size(75%);
   }
 
   .contact-wrapper {
@@ -696,14 +696,14 @@ body {
   }
 
   .contener-expo {
-    width: 45%;
+    @include width-size(45%);
   }
 
   .card-video {
-    width: 45%;
+    @include width-size(45%);
   }
 
   .cronograma {
-    width: 45%;
+    @include width-size(45%);
   }
 }
